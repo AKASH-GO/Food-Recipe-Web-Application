@@ -7,15 +7,15 @@ const recipeCloseBtn = document.getElementById("recipeCloseBtn");
 
 // Event Listeners
 searchButton.addEventListener("click", async () => {
-  const ingredient = searchInput.ariaValueMax.trim();
+  const ingredient = searchInput.value.trim();
   if (ingredient) {
     const meals = await searchMealsByIngredient(ingredient);
     displayMeals(meals);
   }
 });
 
-mealList.addEventListener("click", async () => {
-  const card = e.target.cllosest(".meal-item");
+mealList.addEventListener("click", async (e) => {
+  const card = e.target.closest(".meal-item");
   if (card) {
     const mealId = card.dataset.id;
     const meal = await getMealDetails(mealId);
