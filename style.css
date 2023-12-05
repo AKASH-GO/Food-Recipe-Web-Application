@@ -12,7 +12,7 @@ body{
 }
 
 header{
-    background-color: #333;
+    background-color: #2f4f4f;
     color: #fff;
     text-align: center;
     padding: 20px 20px 30px;
@@ -40,7 +40,7 @@ h1{
 
 .search button{
     padding: 10px 20px;
-    background-color: #ff5722;
+    background-color: #ff7f50;
     border: none;
     width: 10%;
     cursor: pointer;
